@@ -12,7 +12,7 @@ app.use(express.json());
 app.all('./campsites', (req, res, next) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    next(),
+    next()
 });
 
 app.get('/campsite', (req, res) => {
